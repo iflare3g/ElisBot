@@ -8,7 +8,7 @@ class Connection:
     #Tentativo di connessione al DB
     def connect(self):
         try:
-            self.connection = mariadb.connect(user='root', password='elisbot', db='Residence_DB', host='127.0.0.1',cursorclass=pymysql.cursors.DictCursor)
+            self.connection = mariadb.connect(user='YOUR-USER', password='YOUR-PWD', db='YOUR-DB', host='YOUR-HOST',cursorclass=pymysql.cursors.DictCursor)
 
         except Exception as e:
             print('Connection failed! %s,' % e)
