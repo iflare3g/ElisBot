@@ -1,0 +1,226 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 151, in handle
+    response = getUsersFromRoom(room)
+  File "ElisBot.py", line 58, in getUsersFromRoom
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Attendo..
+u'Got command : /findbyname'
+u'Got command : /start'
+u'Got command : /findbyname'
+u'Got command : mirco'
+u'Got command : /findbylabel'
+u'Got command : 101'
+u'Got command : /findbyroom'
+u'Got command : /findbyjob'
+Traceback (most recent call last):
+  File "ElisBot.py", line 228, in <module>
+    time.sleep(10)
+KeyboardInterrupt
+Attendo..
+Traceback (most recent call last):
+  File "ElisBot.py", line 228, in <module>
+    time.sleep(10)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1059, in get_from_telegram_server
+    allowed_updates=allowed_upd)
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 876, in getUpdates
+    return self._api_request('getUpdates', _rectify(p))
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 434, in _api_request
+    return api.request((self._token, method, params, files), **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/telepot/api.py", line 131, in request
+    return _parse(r)
+  File "/usr/local/lib/python2.7/site-packages/telepot/api.py", line 112, in _parse
+    raise exception.BadHTTPResponse(response.status, text, response)
+BadHTTPResponse: Status 502 - First 500 characters are shown below:
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.10.0</center>
+</body>
+</html>
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 125, in handle
+    response = getUserByNameSurname(name)
+  File "ElisBot.py", line 49, in getUserByNameSurname
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Attendo..
+u'Got command : /findbyname'
+u'Got command : /start'
+u'Got command : /findbyname'
+u'Got command : fffff'
+u'Got command : /findbyname'
+u'Got command : mirco'
+u'Got command : /findbyname'
+u'Got command : federico'
+u'Got command : /findbylabel'
+u'Got command : 101'
+u'Got command : /findbylabel'
+u'Got command : 178'
+u'Got command : /findbyroom'
+u'Got command : esquilino'
+u'Got command : /findbyjob'
+u'Got command : Accoglienza ospiti'
+u'Got command : /findbyname'
+u'Got command : pontari'
+u'Got command : /findbyname'
+u'Got command : agneti'
+u'Got command : /findbyname'
+u'Got command : zuardi'
+u'Got command : /findbyname'
+u'Got command : zuardi'
+u'Got command : /findbyjob'
+u'Got command : Aiuto Segreteria'
+u'Got command : /findbyroom'
+u'Got command : Esquilino'
+u'Got command : /findbyname'
+u'Got command : Simone'
+u'Got command : /findbyname'
+u'Got command : Danial'
+u'Got command : /findbylabel'
+u'Got command : 162'
+u'Got command : /findbyname'
+u'Got command : Mancino'
+u'Got command : /findbyname'
+u'Got command : /start'
+u'Got command : /findbyroom'
+u'Got command : Colonna'
+u'Got command : /findbyname'
+u'Got command : Cipolla'
+u'Got command : /findbyname'
+u'Got command : Stella'
+u'Got command : /findbyname'
+u'Got command : Petralia'
+u'Got command : /findbylabel'
+u'Got command : 114'
+u'Got command : /findbyname'
+u'Got command : Agneti'
+u'Got command : /findbyname'
+u'Got command : Serafino'
+u'Got command : /findbyjob'
+u'Got command : Festeggiamenti'
+u'Got command : /findbyjob'
+u'Got command : Biciclette'
+u'Got command : /findbyroom'
+u'Got command : Colonna 1'
+u'Got command : /findbyroom'
+u'Got command : Ponte 1'
+u'Got command : /findbyjob'
+u'Got command : Sport - altri sport'
+u'Got command : /findbylabel'
+u'Got command : 155'
+u'Got command : /start'
+u'Got command : /findbylabel'
+u'Got command : 155'
+u'Got command : /findbyname'
+u'Got command : carlo'
+u'Got command : /findbyname'
+u'Got command : giuseppe agneti'
+u'Got command : /findbylabel'
+u'Got command : 115'
+u'Got command : /findbylabel'
+u'Got command : 114'
+u'Got command : /findbyroom'
+u'Got command : Ponte 1'
+u'Got command : /findbylabel'
+u'Got command : /findbyroom'
+u'Got command : /findbyroom'
+u'Got command : Pigna'
+u'Got command : /findbylabel'
+u'Got command : /start'
+u'Got command : /findbylabel'
+u'Got command : 166'
+u'Got command : /findbyname'
+u'Got command : Stella'
+u'Got command : /findbyname'
+u'Got command : /start'
+u'Got command : /findbyname'
+u'Got command : Agneti'
+u'Got command : /findbyname'
+u'Got command : agneti'
+u'Got command : /findbyname'
+u'Got command : cipolla'
+u'Got command : /findbyname'
+u'Got command : Zuardi'
+u'Got command : /findbyname'
+u'Got command : Danial'
+u'Got command : /findbyroom'
+u'Got command : Esquilino'
+u'Got command : /findbyroom'
+u'Got command : Esquilino 1'
+u'Got command : /findbyroom'
+u'Got command : Campo Marzio'
+u'Got command : /findbyroom'
+u'Got command : Campo Marzio 1'
+u'Got command : /findbylabel'
+u'Got command : 174'
+u'Got command : /findbylabel'
+u'Got command : 181'
+u'Got command : /findbyjob'
+u'Got command : Aiuto Segreteria'
+u'Got command : /findbyname'
+u'Got command : Cipolla'
+u'Got command : /findbyjob'
+u'Got command : Accoglienza ospiti'
+u'Got command : /findbyroom'
+u'Got command : Ponte'
+u'Got command : /findbyname'
+u'Got command : /start'
+u'Got command : /findbyname'
+u'Got command : Gianfranco'
+u'Got command : /findbyname'
+u'Got command : Pochi'
+u'Got command : /findbyname'
+u'Got command : /start'
+u'Got command : /start'
+u'Got command : /findbyname'
+u'Got command : /findbyname'
+u'Got command : Gianfranco'
+u'Got command : Gianfranco'
+u'Got command : /findbyname'
+u'Got command : /findbylabel'
+u'Got command : /findbylabel'
+u'Got command : 115'
+u'Got command : 115'
+u'Got command : /findbyname'
+u'Got command : Flavio'
+u'Got command : /findbyname'
+u'Got command : /findbyname'
+u'Got command : /start'
+u'Got command : /findbyname'
+u'Got command : Flavio'
+u'Got command : /findbyroom'
+u'Got command : Colonna'
+u'Got command : /findbyroom'
+u'Got command : Colonna1'
+u'Got command : /findbyroom'
+u'Got command : Colonna 1'
+u'Attendo..
+Traceback (most recent call last):
+  File "ElisBot.py", line 232, in <module>
+    time.sleep(10)
+KeyboardInterrupt
