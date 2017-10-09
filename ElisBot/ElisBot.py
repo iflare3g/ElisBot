@@ -153,16 +153,20 @@ def handle(msg):
             for user in response:
                 nome = user['Nome']
                 cognome = user['Cognome']
+                cs = user["Capo_Stanza"]
 
-                if nome == "Carlo" or cognome == "Longo":
+                if cognome == "Paciolla":
                     data+=emoji.emojize(u"\U0001f466\U0001f3ff" + nome + " " + cognome + "\n")
                 else:
-                    data+=emoji.emojize(":boy: " + nome + " " + cognome + "\n")
+                    if cs == "Y":
+                        data+=emoji.emojize(":man: " + "*" + nome + "*" + " " + "*"+ cognome + " - Capo Stanza*" +"\n")
+                    else:
+                        data+=emoji.emojize(":boy: " + nome + " " + cognome +"\n")
             if data == "":
                 bot.sendMessage(chat_id,"Stanza non trovata!")
             else:
                 bot.sendChatAction(chat_id,'typing')
-                bot.sendMessage(chat_id,data)
+                bot.sendMessage(chat_id,data,parse_mode="Markdown")
             user_states[chat_id][2] = False
 
         elif command.lower() == "/findbyjob":
@@ -229,4 +233,3 @@ while 1:
     except requests.exceptions.ConnectionError as e:
 
         print(str(e))
-

@@ -8,7 +8,7 @@ class Connection:
     #Tentativo di connessione al DB
     def connect(self):
         try:
-            self.connection = mariadb.connect(user='YOUR-USER', password='YOUR-PWD', db='YOUR-DB', host='YOUR-HOST',cursorclass=pymysql.cursors.DictCursor)
+            self.connection = mariadb.connect(user='root', password='elisbot', db='ElisBot', host='localhost',cursorclass=pymysql.cursors.DictCursor)
 
         except Exception as e:
             print('Connection failed! %s,' % e)
@@ -75,7 +75,7 @@ class Connection:
 
             with self.connection.cursor() as cursor:
 
-                  queryForUserInfo = 'select Nome,Cognome from Residence_DB where Stanza like %s'
+                  queryForUserInfo = 'select Nome,Cognome,Capo_Stanza from Residence_DB where Stanza like %s'
                   cursor.execute(queryForUserInfo,(room + "%"))
                   result = cursor.fetchall()
                   #print(result)
@@ -114,4 +114,3 @@ class Connection:
                 self.connection.close()
 
         return result
-
