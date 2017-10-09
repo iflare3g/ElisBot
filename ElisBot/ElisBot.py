@@ -155,8 +155,8 @@ def handle(msg):
                 cognome = user['Cognome']
                 cs = user["Capo_Stanza"]
 
-                if cognome == "Paciolla":
-                    data+=emoji.emojize(u"\U0001f466\U0001f3ff" + nome + " " + cognome + "\n")
+                if cognome == "Paciolla" and cs == "Y":
+                    data+=emoji.emojize(u"\U0001f466\U0001f3ff" + nome + " " + cognome + " *- Capo Stanza*"+"\n")
                 else:
                     if cs == "Y":
                         data+=emoji.emojize(":man: " + "*" + nome + "*" + " " + "*"+ cognome + " - Capo Stanza*" +"\n")
