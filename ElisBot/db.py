@@ -45,7 +45,7 @@ class Connection:
 
                         filtered_result += map(lambda lab:int(lab),label.values())
 
-                print filtered_result
+                print(filtered_result)
 
         finally:
             self.connection.close()
