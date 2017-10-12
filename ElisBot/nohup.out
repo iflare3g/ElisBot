@@ -224,3 +224,1147 @@ Traceback (most recent call last):
   File "ElisBot.py", line 232, in <module>
     time.sleep(10)
 KeyboardInterrupt
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 125, in handle
+    response = getUserByNameSurname(name)
+  File "ElisBot.py", line 49, in getUserByNameSurname
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1059, in get_from_telegram_server
+    allowed_updates=allowed_upd)
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 876, in getUpdates
+    return self._api_request('getUpdates', _rectify(p))
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 434, in _api_request
+    return api.request((self._token, method, params, files), **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/telepot/api.py", line 131, in request
+    return _parse(r)
+  File "/usr/local/lib/python2.7/site-packages/telepot/api.py", line 112, in _parse
+    raise exception.BadHTTPResponse(response.status, text, response)
+BadHTTPResponse: Status 502 - First 500 characters are shown below:
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.10.1</center>
+</body>
+</html>
+
+Attendo..
+u'Got command : /findbyname'
+u'Got command : /findbyroom'
+u'Got command : /start'
+u'Got command : /start'
+u'Got command : /findbyroom'
+u'Got command : /findbyname'
+u'Got command : Monti 2'
+u'Got command : Tandoi'
+u'Got command : /findbyroom'
+u'Got command : Campo'
+u'Got command : /start'
+u'Got command : /findbyroom'
+u'Got command : Campo'
+u'Got command : /findbyname'
+u'Got command : Par'
+u'Got command : /findbyroom'
+u'Got command : /start'
+u'Got command : Campo Marzio 2'
+u'Got command : /findbyroom'
+u'Got command : Campo Marzio'
+u'Got command : /findbyname'
+u'Got command : Start'
+u'Got command : /start'
+u'Got command : /findbyroom'
+u'Got command : /findbyroom'
+u'Got command : Parione 1'
+u'Got command : Campo Marzio 7'
+u'Got command : /findbyname'
+u'Got command : Campo Marzio 1'
+u'Got command : Campo Marzio 6'
+u'Got command : /findbyname'
+u'Got command : Popolano'
+u'Got command : /findbyroom'
+u'Got command : Colonna'
+u'Got command : Campo Marzio 1'
+u'Got command : Borgo'
+u'Got command : /findbyroom'
+u'Got command : Borgo'
+u'Got command : /findbyroom'
+u'Got command : /start'
+u'Got command : /findbyroom'
+u'Got command : Pigna 2'
+u'Got command : /findbylabel'
+u'Got command : 151'
+u'Got command : /findbyroom'
+u'Got command : Campo Marzio 2'
+u'Got command : /findbyroom'
+u'Got command : Ponte'
+u'Got command : /findbyname'
+u'Got command : /findbyname'
+u'Got command : /start'
+u'Got command : /findbyname'
+u'Got command : Agenti'
+u'Got command : Agneti'
+u'Got command : /findbyname'
+u'Got command : Agneti'
+u'Got command : /findbyname'
+u'Got command : Tallarita'
+u'Got command : /findbyjob'
+u'Got command : Pranzi e cene fuori'
+u'Got command : /findbyname'
+u'Got command : /start'
+u'Got command : /findbyname'
+u'Got command : Silvio'
+u'Got command : /start'
+u'Got command : /findbyname'
+u'Got command : /findbyname'
+u'Got command : /start'
+u'Got command : /findbyname Simone'
+u'Got command : Simone'
+u'Got command : /findbyroom'
+u'Got command : Monti 2'
+u'Got command : /findbyroom'
+u'Got command : Manfreda'
+u'Got command : /findbyname'
+u'Got command : /start'
+u'Got command : /findbyname'
+u'Got command : colucci'
+u'Got command : /findbyroom'
+u'Got command : Monti 3'
+u'Got command : /findbyname'
+u'Got command : /findbyroom'
+u'Got command : paciolla'
+u'Got command : Monti 4'
+u'Got command : /start'
+u'Got command : /findbyroom'
+u'Got command : Ponte 2'
+u'Got command : Giacalone'
+u'Got command : /findbyname'
+u'Got command : Giacalone'
+u'Got command : /findbyname'
+u'Got command : Tosto'
+u'Got command : /start'
+u'Got command : /findbyname'
+u'Got command : Silvio Cifone'
+u'Got command : /findbyname'
+u'Got command : Silvio'
+u'Got command : /start'
+u'Got command : /findbyname'
+u'Got command : Piano'
+u'Got command : /findbyname'
+u'Got command : Pietro'
+u'Got command : /findbyname'
+u'Got command : Campo marzio'
+u'Got command : /findbyroom'
+u'Got command : Campo Marzio'
+u'Got command : /findbyjob'
+u'Got command : Sport - calcio'
+u'Got command : /findbyname'
+u'Got command : /findbyjob'
+u'Got command : Strumenti musicali'
+u'Got command : /start'
+u'Got command : /findbyname'
+u'Got command : Sergio parisi'
+u'Got command : Parisi'
+u'Got command : /findbyname'
+u'Got command : Parisi Sergio'
+u'Got command : /findbyname'
+u'Got command : Sergio parisi'
+u'Got command : /findbyname'
+u"Got command : Antonio d'ademo"
+u'Got command : Antonino'
+u'Got command : /findbyname'
+u'Got command : Tosto'
+u'Got command : /findbyname'
+u'Got command : Virgilio'
+u'Got command : /start'
+u'Got command : /findbyname'
+u'Got command : Virgilio'
+u'Got command : /findbyname'
+u'Got command : Vicecon'
+u'Got command : /findbyroom'
+u'Got command : Campo Marzio 2'
+u'Got command : /findbyname'
+u'Got command : Silvio Pablo'
+u'Got command : /findbyname'
+u'Got command : /start'
+u'Got command : /findbyname'
+u'Got command : Ricciardi'
+u'Got command : /findbyname'
+u'Got command : Palmieri'
+u'Got command : /findbyjob'
+u'Got command : Oratorio'
+u'Got command : /findbyjob'
+u'Got command : Merenda'
+u'Got command : /findbyjob'
+u'Got command : Sport - calcio'
+u'Got command : /findbyjob'
+u'Got comTraceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 151, in handle
+    response = getUsersFromRoom(room)
+  File "ElisBot.py", line 58, in getUsersFromRoom
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 151, in handle
+    response = getUsersFromRoom(room)
+  File "ElisBot.py", line 58, in getUsersFromRoom
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 151, in handle
+    response = getUsersFromRoom(room)
+  File "ElisBot.py", line 58, in getUsersFromRoom
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 151, in handle
+    response = getUsersFromRoom(room)
+  File "ElisBot.py", line 58, in getUsersFromRoom
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 151, in handle
+    response = getUsersFromRoom(room)
+  File "ElisBot.py", line 58, in getUsersFromRoom
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 151, in handle
+    response = getUsersFromRoom(room)
+  File "ElisBot.py", line 58, in getUsersFromRoom
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 151, in handle
+    response = getUsersFromRoom(room)
+  File "ElisBot.py", line 58, in getUsersFromRoom
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 151, in handle
+    response = getUsersFromRoom(room)
+  File "ElisBot.py", line 58, in getUsersFromRoom
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 151, in handle
+    response = getUsersFromRoom(room)
+  File "ElisBot.py", line 58, in getUsersFromRoom
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 151, in handle
+    response = getUsersFromRoom(room)
+  File "ElisBot.py", line 58, in getUsersFromRoom
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 151, in handle
+    response = getUsersFromRoom(room)
+  File "ElisBot.py", line 58, in getUsersFromRoom
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 151, in handle
+    response = getUsersFromRoom(room)
+  File "ElisBot.py", line 58, in getUsersFromRoom
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 151, in handle
+    response = getUsersFromRoom(room)
+  File "ElisBot.py", line 58, in getUsersFromRoom
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 151, in handle
+    response = getUsersFromRoom(room)
+  File "ElisBot.py", line 58, in getUsersFromRoom
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 101, in handle
+    response = findByLabel(command)
+  File "ElisBot.py", line 33, in findByLabel
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 101, in handle
+    response = findByLabel(command)
+  File "ElisBot.py", line 33, in findByLabel
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 101, in handle
+    response = findByLabel(command)
+  File "ElisBot.py", line 33, in findByLabel
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+mand : Giardini'
+u'Got command : /findbyjob'
+u'Got command : Carrelli'
+u'Got command : /findbyname'
+u'Got command : Vincenzo'
+u'Got command : /start'
+u'Got command : /findbyname'
+u'Got command : Politan\xf3'
+u'Got command : Alessio'
+u'Got command : /findbyname'
+u'Got command : Alessio'
+u'Got command : /start'
+u'Got command : Simone'
+u'Got command : /findbyname'
+u'Got command : Simone'
+u'Got command : /findbyname'
+u'Got command : federico'
+u'Got command : /findbyname'
+u'Got command : Sergio'
+u'Got command : /manuguerra'
+u'Got command : /findbyname'
+u'Got command : Manuguerra'
+u'Got command : /start'
+u'Got command : /start'
+u'Got command : /findbyname'
+u'Got command : /start'
+u'Got command : Russo'
+u'Got command : /findbyname'
+u'Got command : Salvatore pio'
+u'Got command : /findbyname'
+u'Got command : /start'
+u'Got command : /start'
+u'Got command : /findbyname'
+u'Got command : rosario mussari'
+u'Got command : /start'
+u'Got command : /findbyname'
+u'Got command : Alessio ferrigno'
+u'Got command : /findbyroom'
+u'Got command : Colonna 1'
+u'Got command : /findbyname'
+u'Got command : Flavio'
+u'Got command : /findbyname'
+u'Got command : Giuseppe'
+u'Got command : /findbylabel'
+u'Got command : /findbylabel'
+u'Got command : /start'
+u'Got command : /start'
+u'Got command : /findbylabel'
+u'Got command : /findbylabel'
+u'Got command : 103'
+u'Got command : 103'
+u'Got command : /findbyjob'
+u'Got command : /findbyroom'
+u'Got command : Borgo2'
+u'Got command : /findbyroom'
+u'Got command : Borgo 1'
+u'Got command : Borgo 2'
+u'Got command : /start'
+u'Got command : /findbylabel'
+u'Got command : 103'
+u'Got command : 120'
+u'Got command : 103'
+u'Got command : /findbylabel'
+u'Got command : 120'
+u'Got command : 109'
+u'Got command : 103'
+u'Got command : /findbyname'
+u'Got command : 109'
+u'Got command : 103'
+u'Got command : /findbylabel'
+u'Got command : 103'
+u'Got command : /findbylabel'
+u'Got command : 109'
+u'Got command : simone marino'
+u'Got command : Simone marino'
+u'Got command : /findbyname'
+u'Got command : simone marino'
+u'Got command : /start'
+u'Got command : /start'
+u'Got command : /findbyroom'
+u'Got command : Parione2'
+u'Got command : Parione 2'
+u'Got command : /findbyroom'
+u'Got command : Parione 2'
+u'Got command : /findbyroom'
+u'Got command : Parione 1'
+u'Got command : /findbyname'
+u'Got command : /findbyname'
+u'Got command : Simone Marino'
+u'Got command : Silvio cifone'
+u'Got command : /findbyname'
+u'Got command : /findbyname'
+u'Got command : Silvio Pablo Cifone'
+u'Got command : Silvio Pablo cifone'
+u'Got command : /findbyjob'
+u'Got command : /findbyroom'
+u'Got command : Ponte 1'
+u'Got command : Foto e archivio storico'
+u'Got command : /findbyroom'
+u'Got command : /findbylabel'
+u'Got command : /findbyname'
+u'Got command : Ferrigno'
+u'Got command : 134'
+u'Got command : /findbyname'
+u'Got command : Cifone'
+u'Got command : /findbyname'
+u'Got command : Marino'
+u'Got command : /findbyjob'
+u'Got command : /findbyname'
+u'Got command : Silvio'
+u'Got command : /findbyjob'
+u'Got command : /findbyname'
+u'Got command : Silvio Cifone'
+u'Got command : /findbyjob'
+u'Got command : /findbyjob'
+u'Got command : /findbyjob'
+u'Got command : /findbyjob'
+u'Got command : /findbyjob'
+u'Got command : /findbyjob'
+u'Got command : Elis Notizie'
+u'Got command : /findbyjob'
+u'Got command : /findbyjob'
+u'Got command : /findbyjob'
+u'Got command : /findbyjob'
+u'Got command : /findbyjob'
+u'Got command : /findbyjob'
+u'Got command : /findbyjob'
+u'Got command : /findbyjob'
+u'Got command : /findbyjob'
+u'Got command : /findbylabel'
+u'Got command : 122'
+u'Got command : 1'
+u'Got command : /findbylabel'
+u'Got command : 1'
+u'Got command : /findbylabel'
+u'Got command : /findbylabel'
+u'Got command : 117'
+u'Got command : /start'
+u'Got command : 117'
+u'Got command : /findbylabel'
+u'Got command : 117'
+u'Got command : /findbylabel'
+u'Got command : 129'
+u'Got command : /findbylabel'
+u'Got command : 165'
+u'Got command : /findbylabel'
+u'Got command : 165'
+u'Got command : /findbylabel'
+u'Got command : 111'
+u'Got command : /findbylabel'
+u'Got command : 165'
+u'Got command : /findbyname'
+u'Got coTraceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 125, in handle
+    response = getUserByNameSurname(name)
+  File "ElisBot.py", line 49, in getUserByNameSurname
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 125, in handle
+    response = getUserByNameSurname(name)
+  File "ElisBot.py", line 49, in getUserByNameSurname
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 125, in handle
+    response = getUserByNameSurname(name)
+  File "ElisBot.py", line 49, in getUserByNameSurname
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 125, in handle
+    response = getUserByNameSurname(name)
+  File "ElisBot.py", line 49, in getUserByNameSurname
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 101, in handle
+    response = findByLabel(command)
+  File "ElisBot.py", line 33, in findByLabel
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 125, in handle
+    response = getUserByNameSurname(name)
+  File "ElisBot.py", line 49, in getUserByNameSurname
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 125, in handle
+    response = getUserByNameSurname(name)
+  File "ElisBot.py", line 49, in getUserByNameSurname
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 101, in handle
+    response = findByLabel(command)
+  File "ElisBot.py", line 33, in findByLabel
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 125, in handle
+    response = getUserByNameSurname(name)
+  File "ElisBot.py", line 49, in getUserByNameSurname
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 125, in handle
+    response = getUserByNameSurname(name)
+  File "ElisBot.py", line 49, in getUserByNameSurname
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 101, in handle
+    response = findByLabel(command)
+  File "ElisBot.py", line 33, in findByLabel
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 125, in handle
+    response = getUserByNameSurname(name)
+  File "ElisBot.py", line 49, in getUserByNameSurname
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 125, in handle
+    response = getUserByNameSurname(name)
+  File "ElisBot.py", line 49, in getUserByNameSurname
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 125, in handle
+    response = getUserByNameSurname(name)
+  File "ElisBot.py", line 49, in getUserByNameSurname
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 101, in handle
+    response = findByLabel(command)
+  File "ElisBot.py", line 33, in findByLabel
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 125, in handle
+    response = getUserByNameSurname(name)
+  File "ElisBot.py", line 49, in getUserByNameSurname
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 151, in handle
+    response = getUsersFromRoom(room)
+  File "ElisBot.py", line 58, in getUsersFromRoom
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 125, in handle
+    response = getUserByNameSurname(name)
+  File "ElisBot.py", line 49, in getUserByNameSurname
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 125, in handle
+    response = getUserByNameSurname(name)
+  File "ElisBot.py", line 49, in getUserByNameSurname
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 125, in handle
+    response = getUserByNameSurname(name)
+  File "ElisBot.py", line 49, in getUserByNameSurname
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 125, in handle
+    response = getUserByNameSurname(name)
+  File "ElisBot.py", line 49, in getUserByNameSurname
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 125, in handle
+    response = getUserByNameSurname(name)
+  File "ElisBot.py", line 49, in getUserByNameSurname
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 125, in handle
+    response = getUserByNameSurname(name)
+  File "ElisBot.py", line 49, in getUserByNameSurname
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/telepot/__init__.py", line 1034, in collector
+    callback(item)
+  File "ElisBot.py", line 125, in handle
+    response = getUserByNameSurname(name)
+  File "ElisBot.py", line 49, in getUserByNameSurname
+    return request.json()
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 651, in json
+    return json.loads(self.text or self.content, **kwargs)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/__init__.py", line 505, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib64/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+mmand : /findbyname'
+u'Got command : Poch'
+u'Got command : /findbyname'
+u'Got command : Francesco'
+u'Got command : /findbyname'
+u'Got command : Francesco'
+u'Got command : /findbyname'
+u'Got command : Poc'
+u'Got command : /findbyname'
+u'Got command : Simone'
+u'Got command : /findbyname'
+u'Got command : /findbylabel'
+u'Got command : /findbylabel'
+u'Got command : Francesco'
+u'Got command : 165'
+u'Got command : Poch\xed'
+u'Got command : /findbyname'
+u'Got command : /findbylabel'
+u'Got command : Francesco'
+u'Got command : 165'
+u'Got command : Poch\xec'
+u'Got command : /findbylabel'
+u'Got command : 103'
+u'Got command : /findbyname'
+u'Got command : /findbylabel'
+u'Got command : /findbyname'
+u'Got command : Francesco'
+u'Got command : 103'
+u'Got command : Simone'
+u'Got command : /findbylabel'
+u'Got command : 165'
+u'Got command : /findbyname'
+u'Got command : /findbylabel'
+u'Got command : /findbyname'
+u'Got command : Francesco'
+u'Got command : 114'
+u'Got command : Francesco'
+u'Got command : /findbyname'
+u'Got command : /findbylabel'
+u'Got command : France'
+u'Got command : /findbyname'
+u'Got command : /findbyname'
+u'Got command : /start'
+u'Got command : /start'
+u'Got command : Marco'
+u'Got command : /findbyname'
+u'Got command : /findbylabel'
+u'Got command : /findbylabel'
+u'Got command : /findbylabel'
+u'Got command : 103'
+u'Got command : Graziano'
+u'Got command : France'
+u'Got command : 117'
+u'Got command : 165'
+u'Got command : /findbyname'
+u'Got command : 198'
+u'Got command : Poch'
+u'Got command : /findbylabel'
+u'Got command : 148'
+u'Got command : /start'
+u'Got command : /start'
+u'Got command : /findbylabel'
+u'Got command : 123'
+u'Got command : /findbyroom'
+u'Got command : Monti 1'
+u'Got command : /findbylabel'
+u'Got command : 103'
+u'Got command : 165'
+u'Got command : /findbyname'
+u'Got command : Francesco'
+u'Got command : /findbyroom'
+u'Got command : /findbyname'
+u'Got command : /findbyroom'
+u'Got command : Francesco'
+u'Got command : /findbyname'
+u'Got command : Borgo1'
+u'Got command : Leonardo'
+u'Got command : /findbyname'
+u'Got command : Cipolla'
+u'Got command : /findbyroom'
+u'Got command : Borgo 1'
+u'Got command : 165'
+u'Got command : 145'
+u'Got command : 122'
+u'Got command : Oceana'
+u'Got command : /start'
+u'Got command : Luca oceana'
+u'Got command : /findbyroom'
+u'Got command : Monti 2'
+u'Got command : Monti 1'
+u'Got command : Emanuele pa ciolla'
+u'Got command : Pa ciolla'
+u'Got command : Paciolla'
+u'Got command : /findbyname'
+u'Got command : Stefano'
+u'Got command : /start'
+u'Got command : /findbyname'
+u'Got command : Leonardo Lauriola'
+u'Got command : /findbyjob'
+u'Got command : Oratorio'
+u'Got command : /findbyname'
+u'Got command : Francesco Cipolla'
+u'Got command : /findbylabel'
+u'Got command : Matteo Manfreda'
+u'Got command : Matteo'
+u'Got command : /findbyjob'
+u'Got command : /findbyname'
+u'Got command : /findbyname'
+u'Got command : Guardaroba'
+u'Got command : Matteo Manfreda'
+u'Got command : Antonio'
+u'Got command : /findbyname'
+u'Got command : Matteo'
+u'Got command : /start'
+u'Got command : /findbyjob'
+u'Got command : Guardaroba'
+u'Got command : /findbyjob'
+u'Got command : Aiuto Segreteria'
+u'Got command : /start'
+u'Got command : /findbyjob'
+u'Got command : /findbyname'
+u'Got command : Francesco'
+u'Got command : Manutenzione autarchica'
+u'Got command : /findbyjob'
+u'Got command : /findbyname'
+u'Got command : Sport - altri sport'
+u'Got command : Alessio'
+u'Got command : /findbyname'
+u'Got command : Francesco pochi'
+u'Got command : /findbyname'
+u'Got command : Francesco Poch\xec'
+u'Got command : /findbyname'
+u'Got command : Alessio'
+u'Got command : /findbyname'
+u'Got command : francesco'
+u'Got command : /findbyname'
+u'Got command : Francesco'
+u'Got command : /findbyjob'
+u'Got command : Accoglienza ospiti'
+u'Got command : /findbylabel'
+u'Got command : 165'
+u'Got command : /findbylabel'
+u'Got command : 165'
+u'Got command : /findbyname'
+u'Got command : Francesco'
+u'Got command : /findbyname'
+u'Got command : Francesco manuguerra'
+u'Got command : /findbyname'
+u'Got command : Simona scanzani'
+u'Got command : Simone scanzani'
+u
