@@ -216,7 +216,7 @@ def handle(msg):
 #telepot.api._onetime_pool_spec = (urllib3.ProxyManager, dict(proxy_url=proxy_url, num_pools=1, maxsize=1, retries=False, timeout=30))
 
 #Config plus start listening to messages..
-bot = telepot.Bot(Config.token_bot)
+bot = telepot.Bot(Config.token_bot_test)
 bot.message_loop(handle)
 inLabel=False
 inName=False
