@@ -8,7 +8,7 @@ class Connection:
     #Tentativo di connessione al DB
     def connect(self):
         try:
-            self.connection = mariadb.connect(user='root', password='elisbot', db='ElisBot', host='127.0.0.1',cursorclass=pymysql.cursors.DictCursor)
+            self.connection = mariadb.connect(user='your-username', password='your-pwd', db='your-db', host='your-host',cursorclass=pymysql.cursors.DictCursor)
 
         except Exception as e:
             print('Connection failed! %s,' % e)
@@ -45,7 +45,7 @@ class Connection:
 
                         filtered_result += map(lambda lab:int(lab),label.values())
 
-                print(filtered_result)
+                #print(filtered_result)
 
         finally:
             self.connection.close()
@@ -110,6 +110,21 @@ class Connection:
                   cursor.execute(queryForJobs)
                   result = cursor.fetchall()
                   #print(result)
+        finally:
+                self.connection.close()
+
+        return result
+
+    #get work round centralino
+    def get_work_round(self,label):
+        try:
+
+            with self.connection.cursor() as cursor:
+
+                  queryForJobs = """select R.Nome,R.Cognome,T.data from Residence_DB as R,Turno as T where R.Sigla=%s""
+                  and R.Sigla=T.sigla"""
+                  cursor.execute(queryForJobs,(label))
+                  result = cursor.fetchall()
         finally:
                 self.connection.close()
 

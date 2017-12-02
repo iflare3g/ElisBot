@@ -2,10 +2,26 @@
 from flask import Flask,jsonify
 from db import Connection
 from flask_cors import CORS
+from flask.json import JSONEncoder
+from datetime import date
 
+
+class CustomJSONEncoder(JSONEncoder):
+
+    def default(self, obj):
+        try:
+            if isinstance(obj, date):
+                return obj.strftime('%d of %B %Y')
+            iterable = iter(obj)
+        except TypeError:
+            pass
+        else:
+            return list(iterable)
+        return JSONEncoder.default(self, obj)
 
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
+app.json_encoder = CustomJSONEncoder
 CORS(app)
 connect_db = Connection()
 
@@ -51,7 +67,12 @@ def getJobs():
     return jsonify(connect_db.getJobs())
 
 
-
+@app.route("/turno/<label>",methods=['GET'])
+def get_work_round(label):
+    
+    connect_db.connect()
+    return jsonify(connect_db.get_work_round(label))
+    
 
 if __name__ == "__main__":
     app.run()

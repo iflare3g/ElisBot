@@ -66,6 +66,14 @@ def getUsersByJob(job):
         pprint("Problem with Internet connection!")
 
     return request.json()
+    
+def getWorkRound(label):
+    try:
+        request = requests.get('http://0.0.0.0:5000/turno/' + str(label))
+    except requests.execptions.ConnectionError:
+        pprint("Problem with Internet connection!")
+
+    return request.json()
 
 
 def checkInputLabel(command):
@@ -79,12 +87,12 @@ def checkInputLabel(command):
 def handle(msg):
     command = msg['text']
     chat_id = msg['chat']['id']
-    global inLabel,inName,inRoom,inJob,user_states
+    global inLabel,inName,inRoom,inJob,inWorkRound,user_states
     pprint("Got command : %s" % command)
     #Start commands
     if command.lower() == "/start":
         bot.sendMessage(chat_id,"Welcome to the Elis bot! \n You can use : \n /findbyname to look for a user by his name \n /findbylabel to look for a user by his label (sigla) \n /findbyroom to look for users into a room \n /findbyjob to look for users by their job")
-        user_states[chat_id] = [inLabel,inName,inRoom,inJob]
+        user_states[chat_id] = [inLabel,inName,inRoom,inJob,inWorkRound]
     elif chat_id in user_states.keys():
 
         if command.lower() == "/findbylabel":
@@ -192,12 +200,41 @@ def handle(msg):
                 bot.sendChatAction(chat_id,'typing')
                 bot.sendMessage(chat_id,data,reply_markup=ReplyKeyboardRemove())
             user_states[chat_id][3] = False
+            
+        elif command.lower() == "/centralino":
+            user_states[chat_id][4] = True
+            bot.sendMessage(chat_id,'Inviami la sigla del turnista')
+            
+        elif user_states[chat_id][4]:
+            label = checkInputLabel(command.lower())
+            response = getWorkRound(label)
+            data = ""
+            
+            if label:
+                bot.sendMessage(chat_id,"Quando devi lavorare: ")
+                for user in response:
+                    #nome = user['Nome']
+                    #cognome = user['Cognome']
+                    date = user['data']
+                    
+                    data+=emoji.emojize(":alarm_clock:" + " " + date + "\n")
+                    
+                if data == "":
+                    bot.sendMessage(chat_id,"Turnista non trovato!")
+                else:
+                    bot.sendChatAction(chat_id,'typing')
+                    bot.sendMessage(chat_id,data)
+            else:
+                bot.sendMessage(chat_id,'Devi inviarmi una sigla numerica, non conosco altre forme di sigle. Mi dispiace!')
+            user_states[chat_id][4] = False
+
         else:
             bot.sendMessage(chat_id,"Comando non supportato!",reply_markup=ReplyKeyboardRemove())
             user_states[chat_id][0] = False
             user_states[chat_id][1] = False
             user_states[chat_id][2] = False
             user_states[chat_id][3] = False
+            user_states[chat_id][4] = False
 
 
     else:
@@ -222,6 +259,7 @@ inLabel=False
 inName=False
 inRoom = False
 inJob = False
+inWorkRound = False
 user_states = {}
 print ("Attendo..")
 
