@@ -5,8 +5,9 @@ from config import Config
 from pprint import pprint
 
 def buildKeyboard():
+    global port
     buttons = []
-    getJobs = requests.get('http://0.0.0.0:5000/getJobs/')
+    getJobs = requests.get('http://0.0.0.0:{}/getJobs/'.format(str(port)))
     jobs = getJobs.json()
     for job in jobs:
         buttons.append([KeyboardButton(text = job['Nome'])])
@@ -16,16 +17,18 @@ def buildKeyboard():
     return reply_markup
 
 def getJobs():
+    global port
     try:
-        request = requests.get('http://0.0.0.0:5000/getJobs/')
+        request = requests.get('http://0.0.0.0:{}/getJobs/'.format(str(port)))
     except requests.exceptions.ConnectionError:
         pprint("Problem with Internet connection!")
 
     return request.json()
 
 def findByLabel(label):
+        global port
         try:
-          request = requests.get('http://0.0.0.0:5000/findByLabel/' + str(label))
+          request = requests.get('http://0.0.0.0:{0}/findByLabel/{1}'.format(str(port),str(label)))
           #print request.text
         except requests.exceptions.ConnectionError:
           pprint("Problem with Internet Connection!")
@@ -33,16 +36,18 @@ def findByLabel(label):
         return request.json()
 
 def getLabels():
+    global port
     try:
-        request = requests.get('http://0.0.0.0:5000/getLabels/')
+        request = requests.get('http://0.0.0.0:{}/getLabels/'.format(str(port)))
     except requests.exceptions.ConnectionError:
         pprint("Problem with Internet connection!")
 
     return request.json()
 
 def getUserByNameSurname(name):
+     global port
      try:
-            request = requests.get('http://0.0.0.0:5000/getInfoByNameSurname/' + name)
+            request = requests.get('http://0.0.0.0:{0}/getInfoByNameSurname/{1}'.format(str(port),name))
      except requests.exceptions.ConnectionError:
             pprint("Problem with Internet connection!")
 
@@ -50,8 +55,9 @@ def getUserByNameSurname(name):
 
 
 def getUsersFromRoom(room):
+    global port
     try:
-        request = requests.get('http://0.0.0.0:5000/getUsersFromRoom/' + room)
+        request = requests.get('http://0.0.0.0:{0}/getUsersFromRoom/{1}'.format(str(port),room))
     except requests.execptions.ConnectionError:
         pprint("Problem with Internet connection!")
 
@@ -60,16 +66,18 @@ def getUsersFromRoom(room):
 
 
 def getUsersByJob(job):
+    global port
     try:
-        request = requests.get('http://0.0.0.0:5000/getUsersByJob/' + job)
+        request = requests.get('http://0.0.0.0:{0}/getUsersByJob/{1}'.format(str(port),job))
     except requests.execptions.ConnectionError:
         pprint("Problem with Internet connection!")
 
     return request.json()
     
 def getWorkRound(label):
+    global port
     try:
-        request = requests.get('http://0.0.0.0:5000/turno/' + str(label))
+        request = requests.get('http://0.0.0.0:{0}/turno/{1}'.format(str(port),str(label)))
     except requests.execptions.ConnectionError:
         pprint("Problem with Internet connection!")
 
@@ -260,6 +268,7 @@ inName=False
 inRoom = False
 inJob = False
 inWorkRound = False
+port = 5500
 user_states = {}
 print ("Attendo..")
 
