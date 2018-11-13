@@ -128,3 +128,37 @@ class Connection:
                 self.connection.close()
 
         return result
+
+    def get_user_id(self, name):
+        try:
+            with self.connection.cursor() as cursor:
+                queryForUserInfo = 'select ID from Residence_DB where concat(Cognome, " " ,Nome) like %s'
+                cursor.execute(queryForUserInfo, ("%" + name + "%"))
+                result = cursor.fetchone()
+        except:
+            self.connection.close()
+        return result['ID']
+        
+    def get_job_id(self, job):
+        try:
+            with self.connection.cursor() as cursor:
+                queryForUserInfo = 'select ID from Incarichi where Nome like %s'
+                cursor.execute(queryForUserInfo, job.strip())
+                result = cursor.fetchone()
+        except:
+            self.connection.close()
+        return result['ID']
+        
+    def insert_jobs(self, user_id, jobs_id):
+        try:
+            with self.connection.cursor() as cursor:
+                # Create a new record
+                sql = "INSERT INTO `Incaricato` (`ID_Residente`, `ID_Incarico`) VALUES (%s, %s)"
+                cursor.execute(sql, (user_id, jobs_id))
+        
+            # connection is not autocommit by default. So you must commit to save
+            # your changes.
+            self.connection.commit()
+        except:
+            self.connection.close()
+        
