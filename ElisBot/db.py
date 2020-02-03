@@ -74,7 +74,7 @@ class Connection:
 
             with self.connection.cursor() as cursor:
 
-                  queryForUserInfo = 'select Nome,Cognome,Capo_Stanza from Residence_DB where Stanza like %s'
+                  queryForUserInfo = 'select Nome,Cognome,Capo_Stanza,Capo_Nucleo from Residence_DB where Stanza like %s'
                   cursor.execute(queryForUserInfo,(room + "%"))
                   result = cursor.fetchall()
                   #print(result)
