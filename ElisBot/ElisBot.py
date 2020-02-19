@@ -186,12 +186,12 @@ def handle(msg):
             for user in response:
                 nome = user['Nome']
                 cognome = user['Cognome']
-                cn = user["Capo_Nucleo"]
-                cs = user["Capo_Stanza"]
+                capoNucleo = user["Capo_Nucleo"]
+                capoStanza = user["Capo_Stanza"]
 
-                if cn == "Y":
+                if capoNucleo == "Y":
                     data+=emoji.emojize(u"\U0001F9D4 *" + nome + " " + cognome + " - Capo Nucleo*\n")
-                elif cs == "Y":
+                elif capoStanza == "Y":
                     data+=emoji.emojize(":man: *" + nome + " " + cognome + " - Capo Stanza*\n")
                 else:
                     data+=emoji.emojize(":boy: " + nome + " " + cognome +"\n")
