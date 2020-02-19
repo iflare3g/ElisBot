@@ -121,7 +121,16 @@ def handle(msg):
                     corso = response['Corso']
                     cell = response['Num_tel']
                     email = response['E_mail_1_Value']
-                    data = emoji.emojize(":boy: "+ nome + " " + cognome + "\n" + ":envelope: " + email + "\n" + ":telephone_receiver: " + cell + "\n" + ":books: " +corso + "\n" + ":hotel: " + stanza + "\n\n")
+                    face = ":boy:"
+
+                    if response['Capo_Nucleo'] == "Y":
+                        face = u"\U0001F9D4"
+                        stanza += " - Capo Nucleo"
+                    elif response['Capo_Stanza'] == "Y":
+                        face = ":man:"
+                        stanza += " - Capo Stanza"
+
+                    data = emoji.emojize(face + " " + nome + " " + cognome + "\n" + ":envelope: " + email + "\n" + ":telephone_receiver: " + cell + "\n" + ":books: " +corso + "\n" + ":hotel: " + stanza + "\n\n")
                     bot.sendChatAction(chat_id,'typing')
                     bot.sendMessage(chat_id,data)
                 else:
@@ -148,8 +157,16 @@ def handle(msg):
                 course = user['Corso']
                 stanza = user['Stanza']
                 sigla = user['Sigla']
+                face = ":boy:"
 
-                data += emoji.emojize(":boy: "+ nome + " " + cognome + "\n" + ":envelope: " + email + "\n" + ":telephone_receiver: " + cell + "\n" + ":books: " + course + "\n" + ":hotel: " + stanza + "\n" + ":ticket: " +sigla + "\n\n")
+                if user['Capo_Nucleo'] == "Y":
+                    face = u"\U0001F9D4"
+                    stanza += " - Capo Nucleo"
+                elif user['Capo_Stanza'] == "Y":
+                    face = ":man:"
+                    stanza += " - Capo Stanza"
+
+                data += emoji.emojize(face + " " + nome + " " + cognome + "\n" + ":envelope: " + email + "\n" + ":telephone_receiver: " + cell + "\n" + ":books: " + course + "\n" + ":hotel: " + stanza + "\n" + ":ticket: " +sigla + "\n\n")
 
             if data == "":
                 bot.sendMessage(chat_id,"Residente non trovato!")
@@ -169,15 +186,15 @@ def handle(msg):
             for user in response:
                 nome = user['Nome']
                 cognome = user['Cognome']
-                cs = user["Capo_Stanza"]
+                capoNucleo = user["Capo_Nucleo"]
+                capoStanza = user["Capo_Stanza"]
 
-                if cognome == "Paciolla" and cs == "Y":
-                    data+=emoji.emojize(u"\U0001f466\U0001f3ff" + nome + " " + cognome + " *- Capo Stanza*"+"\n")
+                if capoNucleo == "Y":
+                    data+=emoji.emojize(u"\U0001F9D4 *" + nome + " " + cognome + " - Capo Nucleo*\n")
+                elif capoStanza == "Y":
+                    data+=emoji.emojize(":man: *" + nome + " " + cognome + " - Capo Stanza*\n")
                 else:
-                    if cs == "Y":
-                        data+=emoji.emojize(":man: " + "*" + nome + "*" + " " + "*"+ cognome + " - Capo Stanza*" +"\n")
-                    else:
-                        data+=emoji.emojize(":boy: " + nome + " " + cognome +"\n")
+                    data+=emoji.emojize(":boy: " + nome + " " + cognome +"\n")
             if data == "":
                 bot.sendMessage(chat_id,"Stanza non trovata!")
             else:
@@ -197,11 +214,7 @@ def handle(msg):
             for user in response:
                 nome = user['Nome']
                 cognome = user['Cognome']
-
-                if nome == "Carlo" or cognome == "Longo":
-                    data+=emoji.emojize(u"\U0001f466\U0001f3ff" + nome + " " + cognome + "\n")
-                else:
-                    data+=emoji.emojize(":boy: " + nome + " " + cognome + "\n")
+                data+=emoji.emojize(":boy: " + nome + " " + cognome + "\n")
             if data == "":
                 bot.sendMessage(chat_id,"Incaricato non trovato!",reply_markup=ReplyKeyboardRemove())
             else:
