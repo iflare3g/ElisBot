@@ -1,5 +1,5 @@
 Flask==1.0
-Flask-Cors==3.0.3
+Flask-Cors==3.0.9
 Jinja2==2.10
 MarkupSafe==1.0
 PyMySQL==0.8.0
